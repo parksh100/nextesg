@@ -2,11 +2,12 @@ import MenuItem from "./item";
 
 export default function Navbar() {
   return (
-    <>
-      <div className="bg-green-500 p-5 flex flex-col justify-between md:flex-row">
-        <h1 className="text-3xl font-extrabold text-slate-100">ESG Master</h1>
+    <div className="sticky top-0 bg-white">
+      <div className="ps-3 py-3 flex flex-col justify-between md:flex-row">
+        <img className="w-40 h-auto" src="/logo.jpg" />
+        {/* <h1 className="text-4xl font-extrabold text-gray-900">ESG Master</h1> */}
         <MenuItem />
       </div>
-    </>
+    </div>
   );
 }
