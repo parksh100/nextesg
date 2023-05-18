@@ -1,3 +1,5 @@
+import Card from "@/components/card/page.js";
+
 export default function Home() {
   return (
     <>
@@ -6,9 +8,9 @@ export default function Home() {
         <img className="w-full bg-cover object-cover" src="/cityview.jpg" />
       </div>
 
-      <div className=" bg-slate-100 h-screen mx-auto mt-5 text-center md:w-2/3">
+      <div className="bg-slate-100 mx-auto mt-5 text-center md:w-2/3 mb-96">
         <h1 className="text-8xl font-extrabold font-sans">ESG!</h1>
-        <h1 className="text-5xl text-yellow-600 font-extrabold mt-5">
+        <h1 className="text-5xl text-orange-500 font-extrabold mt-5">
           보다 현실적인 접근이 필요합니다!
         </h1>
         <p className="text-lg text-center pt-5">
@@ -40,6 +42,9 @@ export default function Home() {
         <p className="text-lg font-extrabold">
           ESG전문가가 도움이 될 것입니다.
         </p>
+        <div className="mb-10">
+          <Card />
+        </div>
       </div>
     </>
   );
