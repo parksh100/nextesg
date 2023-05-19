@@ -1,4 +1,5 @@
 import Card from "@/components/card/page.js";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -28,31 +29,29 @@ export default function Home() {
           요소가 될 것입니다.
         </p>
         <p className="text-xl text-center pt-5">
-          우리 중소기업은 앞으로도 보증기관의 보증이 필요하고 금융권의 대출도
-          필요하기 때문에 <br />{" "}
           <strong>
-            {" "}
-            ESG가 무엇인지 잘 모른다 하더라도 두 손놓고 있을 수는 없는
-            노릇입니다.
+            ESG에 대해 잘 모른다 하더라도 두 손놓고 있을 수는 없는 상황이 되고
+            있습니다.
           </strong>
         </p>
         <p className="text-xl text-center pt-5">
-          제도의 도입기에는 현실적인 목표 달성을 최우선으로 해야 합니다.
-          다시말해,<strong> 우선 형식을 갖추는 것이 매우 중요합니다.</strong>
+          제도의 도입기에 혜택을 누리기 위해서는
+          <br />
+          <strong> 우선 가능한 한 빨리 형식부터 갖추는 것이 중요합니다.</strong>
         </p>
         <p
           className="text-xl text-center pt-5 font-bold
         "
         >
-          ISO최고등급 심사위원, 경영지도사, 컨설팅학 석박사로 구성된 전문
-          컨설팅팀이 그 목표달성을 가장 완벽하게 지원하고 있습니다.
+          경영지도사, 컨설팅학 석박사, ISO최고전문가로 구성된 전문 컨설팅팀이{" "}
+          <br /> 그 목표달성을 가장 완벽하게 지원하고 있습니다.
         </p>
         <p className="text-xl text-center pt-5">
           지금 바로 전문가와 상담을 통해 ESG이행을 시작해보세요.
         </p>
       </div>
 
-      <section class="text-gray-600 body-font">
+      <section class="text-gray-600 body-font z-auto">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4">
             <div class="p-4 lg:w-1/3">
@@ -109,12 +108,11 @@ export default function Home() {
           <div class="flex flex-wrap">
             <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
               <h2 class="text-lg sm:text-xl text-gray-900 font-bold  mb-2">
-                보증기관의 보증
+                보증 및 금융권의 요구
               </h2>
               <p class="leading-relaxed text-lg mb-4">
-                기술보증기금, 신용보증기금, 신용보증재단, 신용보증기금,
-                신용보증재단 등 보증기관의 보증을 받기 위해서는 ESG이행이
-                필수적입니다.
+                기술보증기금, 신용보증기금, 신용보증재단 등 보증기관의 보증 및
+                금융권 신용평가에서 ESG이행이 필수적입니다.
               </p>
               <a class="text-indigo-500 inline-flex items-center">
                 Learn More
@@ -133,7 +131,7 @@ export default function Home() {
             </div>
             <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
               <h2 class="text-lg sm:text-xl text-gray-900 font-bold   mb-2">
-                벤처투자
+                벤처투자자의 요구
               </h2>
               <p class="leading-relaxed text-lg mb-4">
                 벤처투자, 사모펀드, 펀드 등 투자자의 투자를 받기 위해서는
@@ -156,12 +154,11 @@ export default function Home() {
             </div>
             <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
               <h2 class="text-lg sm:text-xl  font-bold   title-font mb-2">
-                정부지원사업
+                정부지원사업 평가
               </h2>
               <p class="leading-relaxed text-lg mb-4">
-                기술정보진흥원, 지자체 기술지원사업 중소벤처기업부,
-                산업통상자원부 등 정부지원사업에 선정되기 위해서는 ESG이행이
-                필수적입니다.
+                기정원, 지자체 기술지원사업 중소벤처기업부, 산업통상자원부 등
+                정부지원사업에 선정되기 위해서는 ESG이행이 필수적입니다.
               </p>
               <a class="text-indigo-500 inline-flex items-center">
                 Learn More
@@ -180,13 +177,13 @@ export default function Home() {
             </div>
             <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
               <h2 class="text-lg sm:text-xl text-gray-900  font-bold   mb-2">
-                금융권 대출
+                해외고객의 요구
               </h2>
               <p class="leading-relaxed text-lg mb-4">
-                중소벤처기업진흥공단, 지자체, 금융권 등 금융권 대출을 받기
-                위해서는 ESG이행이 필수적입니다.
+                해외시장 진출을 위해서 앞으로 ESG이행이 필수적입니다. 해외고객의
+                요구사항이 점점 높아지고 있습니다.
               </p>
-              <a class="text-indigo-500 inline-flex items-center">
+              <Link href="/" class="text-indigo-500 inline-flex items-center">
                 Learn More
                 <svg
                   fill="none"
@@ -199,12 +196,14 @@ export default function Home() {
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
-          <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-            컨설팅 상담신청
-          </button>
+          <Link href="/application">
+            <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              컨설팅 상담신청
+            </button>
+          </Link>
         </div>
       </section>
     </>

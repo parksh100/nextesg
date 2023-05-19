@@ -48,7 +48,7 @@ export default function MenuItem() {
       <Link
         href=""
         className={`mx-3 text-xl hover:bg-slate-100 p-3 rounded-full ${
-          pathname === "/" ? "bg-slate-100 font-bold" : ""
+          pathname === "" ? "bg-slate-100 font-bold" : ""
         }`}
       >
         Other
