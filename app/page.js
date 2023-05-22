@@ -1,58 +1,27 @@
 import Card from "@/components/card/page.js";
+import Testimony from "@/components/testimony";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       {/* Carousel image */}
-      <div className="flex justify-center">
-        <img className="w-full bg-cover object-cover" src="/cityview.jpg" />
+      <div className="flex justify-center relative">
+        <img
+          className="w-full bg-cover object-cover h-90"
+          src="/cityview.jpg"
+        />
       </div>
 
       <div className="mx-auto text-center md:w-2/3 mb-5">
-        <h1 className="text-8xl font-extrabold font-sans mt-10 mb-10">
+        <h1 className="text-8xl font-extrabold font-sans mt-10 mb-10 absolute top-36 right-5 ">
           WHY ESG?
         </h1>
-        <h1 className="text-3xl text-orange-500 font-extrabold mt-5">
-          정부와 고객사가 ESG이행을 요구하고 있습니다.
-        </h1>
-        <p className="text-xl text-center pt-5">
-          ESG를 한마디로 정의한다면 <strong> "비재무적 기업보고서"</strong>라고
-          할 수 있습니다.
-        </p>
-        <p className="text-xl text-center pt-5">
-          재무제표가 정량적인 실적에 대한 보고서라면{" "}
-          <strong>ESG는 정성적인 실적에 대한 보고서</strong>입니다.
-        </p>
-        <p className="text-xl text-center pt-5 text-blue-600 font-bold">
-          이제 보증기관의 보증, 금융권 대출 등에 있어서 ESG 이행 여부는 필수적인
-          요소가 될 것입니다.
-        </p>
-        <p className="text-xl text-center pt-5">
-          <strong>
-            ESG에 대해 잘 모른다 하더라도 두 손놓고 있을 수는 없는 상황이 되고
-            있습니다.
-          </strong>
-        </p>
-        <p className="text-xl text-center pt-5">
-          제도의 도입기에 혜택을 누리기 위해서는
-          <br />
-          <strong> 우선 가능한 한 빨리 형식부터 갖추는 것이 중요합니다.</strong>
-        </p>
-        <p
-          className="text-xl text-center pt-5 font-bold
-        "
-        >
-          경영지도사, 컨설팅학 석박사, ISO최고전문가로 구성된 전문 컨설팅팀이{" "}
-          <br /> 그 목표달성을 가장 완벽하게 지원하고 있습니다.
-        </p>
-        <p className="text-xl text-center pt-5">
-          지금 바로 전문가와 상담을 통해 ESG이행을 시작해보세요.
-        </p>
+        <Testimony />
       </div>
 
       <section class="text-gray-600 body-font z-auto">
-        <div class="container px-5 py-24 mx-auto">
+        <div class="container px-5 py-5 mx-auto">
           <div class="flex flex-wrap -m-4">
             <div class="p-4 lg:w-1/3">
               <Card

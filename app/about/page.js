@@ -23,9 +23,12 @@ export default function About() {
         <hr />
         <div class="flex flex-col text-center w-full mb-20">
           <p class="lg:w-2/3 mx-auto leading-relaxed text-lg mt-10">
-            국가가 인정한 컨설팅 전문가 경영지도사 <br /> 학위로 증명된 컨설팅
-            전문가 컨설팅학 석﹒박사 <br /> ISO국제표준 검증심사원 팀이 수행하는
-            ESG컨설팅은 더욱 신뢰할 수 있습니다.,
+            국가가 인정한 컨설팅 전문가 <strong>경영지도사</strong> <br />{" "}
+            경험과 학위로 증명된 컨설팅 전문가{" "}
+            <strong>컨설팅학 석﹒박사</strong> <br />{" "}
+            <strong>ISO국제표준 전문가</strong>
+            <br />
+            팀이 수행하는 ESG컨설팅은 더욱 신뢰할 수 있습니다.,
           </p>
         </div>
 
