@@ -1,8 +1,6 @@
 import Navbar from "@/components/navbar/page";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
